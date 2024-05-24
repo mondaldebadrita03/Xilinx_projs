@@ -9,7 +9,7 @@ entity 1to4demux is
 end 1to4demux;
 architecture Behavioral of 1to4demux is
 begin
-Y(0)<=((not(S(1)) and not(S(0) and I));
+Y(0)<=((not(S(1)) and not(S(0)) and I));
 Y(1)<=((not(S(1)) and (S(0) and I));
 Y(2)<=(S(1) and not(S(0) and I));
 Y(3)<=(S(1) and (S(0) and I));
